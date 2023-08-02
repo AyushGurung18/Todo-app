@@ -1,0 +1,28 @@
+#taskInput {
+  text-decoration: none;
+  border-radius: 30px;
+  border: none;
+
+  padding: 20px;
+  font-size: 15px;
+}
+/* Add your custom styles here */
+button.delete-btn {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 90%;
+}
+li:hover {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through; /* Add a line-through text decoration for completed tasks */
+  color: #888;
+}
+.task-date {
+  color: #888;
+  font-size: 0.8rem;
+}
