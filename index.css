@@ -2,7 +2,7 @@
   text-decoration: none;
   border-radius: 30px;
   border: none;
-
+  width: 400px;
   padding: 20px;
   font-size: 15px;
 }
@@ -11,9 +11,16 @@ button.delete-btn {
   background-color: #ff6347;
   color: #fff;
   border: none;
+  border-radius: 13px;
   padding: 5px 10px;
   cursor: pointer;
-  margin-left: 90%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+}
+li{
+  position: relative; /* Add relative positioning to the list items */
 }
 li:hover {
   cursor: pointer;

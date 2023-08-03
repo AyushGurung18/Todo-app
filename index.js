@@ -1,11 +1,12 @@
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
-
 function newElement() {
   const taskText = taskInput.value.trim();
   if (taskText !== "") {
     const li = document.createElement("li");
-    li.innerText = taskText;
+
+    const div = document.createElement("div");
+    div.className = "icon"
 
     const deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
@@ -19,9 +20,12 @@ function newElement() {
     const dateSpan = document.createElement("span");
     dateSpan.innerText = dateString;
     dateSpan.className = "task-date";
-    li.appendChild(dateSpan);
 
-    li.appendChild(deleteBtn);
+    div.appendChild(dateSpan);
+    div.appendChild(deleteBtn);
+
+    li.innerText = taskText;
+    li.appendChild(div);
     taskList.appendChild(li);
     taskInput.value = "";
 
@@ -30,6 +34,7 @@ function newElement() {
     });
   }
 }
+
 
 function formatDate(date) {
   const year = date.getFullYear();
