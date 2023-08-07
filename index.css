@@ -19,8 +19,20 @@ button.delete-btn {
   top: 0;
   margin-right: 10px;
 }
+button.edit-btn{
+  position: absolute;
+  right: 60;
+  border-radius: 13px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-color: #37ff48;
+
+}
 li{
   position: relative; /* Add relative positioning to the list items */
+  margin-bottom: 10px;
 }
 li:hover {
   cursor: pointer;
@@ -32,4 +44,7 @@ li:hover {
 .task-date {
   color: #888;
   font-size: 0.8rem;
+  position: absolute;
+  right: 100;
+  padding: 5px;
 }
